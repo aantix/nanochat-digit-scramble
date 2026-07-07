@@ -1,0 +1,3 @@
+# checkpoints are large and fully reproducible via run.sh; logs and eval JSONs are committed
+runs/**/*.pt
+__pycache__/
