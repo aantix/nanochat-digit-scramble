@@ -165,4 +165,6 @@ git clone --depth 1 https://github.com/mhjabreel/CharCnn_Keras /tmp/agnews
 Repo layout: `prepare_data.py` (the intervention), `train_tokenizer.py`, `train_chunked.py`
 (faithful base_train replica, chunk-resumable), `eval_decomposed.py` (digit-distance bpb),
 `compare_paired.py` (paired significance), `make_plots.py`, `nanochat-src/` (vendored
-unmodified nanochat @ 92d63d4, MIT), `INVENTORY.md`, `IDEAS.md`, `NOVELTY.md`, `SELECTION.md`.
+unmodified nanochat @ 92d63d4, MIT), `INVENTORY.md`, `IDEAS.md`, `NOVELTY.md`, `SELECTION.md`. For a software-engineering
+translation of the ML decisions and every adjusted parameter (before/after with hypotheses),
+see [ENGINEER.md](ENGINEER.md).
