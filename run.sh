@@ -46,6 +46,11 @@ for ARM in baseline scrambled; do
   done
 done
 
-# 5) plots
+# 5) paired per-token significance test (both models on the identical val stream)
+python3 compare_paired.py --base-dir "$DSROOT/baseline" \
+    --ckpt-a runs/baseline/ckpt.pt --ckpt-b runs/scrambled/ckpt.pt \
+    --out results/paired_delta.json
+
+# 6) plots
 python3 make_plots.py --runs-dir runs --results-dir results
 echo "done. see results/"
